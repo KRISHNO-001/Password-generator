@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+      </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="container1">
+            
+            <div class="pswdDisplay">
+                <input readonly placeholder="Password" data-passwordDisplay>
+                <button id="cpyBtn">
+                    <span class="cpyMsg" data-cpmsg></span>
+                    <img src="./assests/copyIcon.svg" width="30px" height="20px" alt="copyBtn">
+                </button>
+            </div>
+            <div class="pwdlen">
+                <p> Password length</p>
+            <p id="passwordLength">0</p>
+
+            </div>
+            
+            <div>
+                <input type="range" id="sliderRange" min="1" max="20" >
+            </div>
+            
+            
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include uppercase</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include lowercase</label>
+            </div>
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Include numbers</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Include symbols</label>
+            </div>
+            <div class="strength">
+                <p>Strength</p>
+                <div id="indicator"></div>
+            </div>
+
+            <button id="generateBtn" onclick="generatePassword()">Generate Password</button>
+
+
+
+        </div>
+         <p style="color: coral;">Made by <span style="color:white; letter-spacing: 2px; margin: 4px; font-weight:500;">Krishno Gopal Das</span>  with
+            <img src="./assests/icons8-loading-heart.gif" height="20px" width="20px"
+            style="border-radius: 100%; margin: 4px; " alt="">
+         </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
