@@ -12,8 +12,8 @@ Generates random password based on input parameters (uppercase,lowercase,number,
  
  #corner case handle
  
- if the #selected  parameters is more than the length of the password which is not possible, slider sets to the length of the number of 
- parameters selected by user
+ if the #selected  parameters is more than the length of the password which is not possible, slider sets to the length equal to the number of 
+ parameters selected by user.
  
  UI Demo
  
