@@ -9,3 +9,12 @@ Generates random password based on input parameters (uppercase,lowercase,number,
  also a copy button to copy the generated password to the clipboard
  
  No frontend framework used 
+ 
+ #corner case handle
+ 
+ if the #selected  parameters is more than the length of the password which is not possible, slider sets to the length of the number of 
+ parameters selected by user
+ 
+ UI Demo
+ 
+[pass gen demo.webm](https://user-images.githubusercontent.com/84618879/225933322-cfdbb9e3-6687-44c3-b1c4-fca8bff586b3.webm)
